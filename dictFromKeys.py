@@ -15,6 +15,13 @@ result = dictionaryFromKeys(list1, list2)
 print(result)
 
 
+
+Assert dictionaryFromKeys([1, 2, 3, 4], [2, 3, 4, 5])== {1: 2, 2: 3, 3: 4, 4: 5}), ('False')
+assert dictionaryFromKeys([6, 7, 8, 9, 10],[1, 2,3,4]) == {6: 1, 7: 2, 8: 3, 9: 4, 10: None}, ('Wrong!')
+
+
+
+
 def test_normal_values(self):
     self.assertEqual(dictionaryFromKeys([1, 2, 3, 4], [2, 3, 4, 5]), {1: 2, 2: 3, 3: 4, 4: 5})
     self.assertEqual(dictionaryFromKeys([6, 7, 8, 9, 10], [1, 2, 3, 4]), {6: 1, 7: 2, 8: 3, 9: 4, 10: None})
